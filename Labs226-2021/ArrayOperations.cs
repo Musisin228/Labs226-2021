@@ -14,16 +14,13 @@ namespace Labs226_2021
 
         public static void TwoDimensionalArrayEx1()
         {
-            int[,] array = new int[10, 5];
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                for (int j = 0; j < array.GetLength(1); j++)
+            int[] array = new int[10];
+                for (int i = 0; i < array.GetLength(0); i++)
                 {
-                    array[i, j] = new Random().Next(10, 50);
-                    Console.Write($"{array[i, j]} ");
+                    array[i] = new Random().Next(10, 50);
                 }
-                Console.WriteLine();
-            }
+                Console.WriteLine(array);
+          
         }
 
         public static void ArrayBubbleSort()
